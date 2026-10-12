@@ -1,0 +1,145 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 3786 >>
+stream
+BT /F2 20 Tf 54 744 Td (LAB 4 Conversation Export) Tj ET
+BT /F2 12 Tf 54 716 Td (Name: shishir) Tj ET
+BT /F2 12 Tf 54 698 Td (SRN: PES1UG24CS438) Tj ET
+BT /F2 12 Tf 54 680 Td (Section: 5H) Tj ET
+BT /F1 10 Tf 54 654 Td (This PDF contains the user prompts and assistant replies from the Breakout LAB-4 coding) Tj ET
+BT /F1 10 Tf 54 640 Td (conversation, organized chronologically.) Tj ET
+BT /F2 14 Tf 54 614 Td (Conversation) Tj ET
+BT /F2 12 Tf 54 594 Td (User Prompt) Tj ET
+BT /F1 10 Tf 68 578 Td (Clone this repo into this folder: https://github.com/Shishir-Hegde14/LAB_4) Tj ET
+BT /F2 12 Tf 54 556 Td (Assistant Reply) Tj ET
+BT /F1 10 Tf 68 540 Td (Cloned https://github.com/Shishir-Hegde14/LAB_4 directly into) Tj ET
+BT /F1 10 Tf 68 526 Td (C:\\Users\\shish\\OneDrive\\Desktop\\LAB-4. The repository is on main tracking origin/main and) Tj ET
+BT /F1 10 Tf 68 512 Td (contains .git, breakout, .gitignore, and README.md.) Tj ET
+BT /F2 12 Tf 54 490 Td (User Prompt) Tj ET
+BT /F1 10 Tf 68 474 Td (Task 1: In game folder, change the code such that when a ball touches a brick, the brick) Tj ET
+BT /F1 10 Tf 68 460 Td (despawns and the ball rebounds as usual. Do not change the bounce-back mechanism; only make) Tj ET
+BT /F1 10 Tf 68 446 Td (the brick despawn. Add a simple particle effect of breaking.) Tj ET
+BT /F2 12 Tf 54 424 Td (Assistant Reply) Tj ET
+BT /F1 10 Tf 68 408 Td (Updated game_engine.py so hit bricks despawn while keeping handle_ball_brick_collision) Tj ET
+BT /F1 10 Tf 68 394 Td (unchanged. Added simple brick-colored break particles and renderer support for drawing them.) Tj ET
+BT /F1 10 Tf 68 380 Td (Verified with compileall and a direct collision check: brick count dropped from 32 to 31, ball) Tj ET
+BT /F1 10 Tf 68 366 Td (vy flipped from -5 to 5, and 8 particles spawned.) Tj ET
+BT /F2 12 Tf 54 344 Td (User Prompt) Tj ET
+BT /F1 10 Tf 68 328 Td (Task 2: In games folder, when brick scores become 0 show YOU WIN and end the game, with two) Tj ET
+BT /F1 10 Tf 68 314 Td (white buttons: restart game and quit. Implement lives: give 3 lives per round, display lives) Tj ET
+BT /F1 10 Tf 68 300 Td (on screen, and every time the ball falls below, remove a life and reset player/ball position) Tj ET
+BT /F1 10 Tf 68 286 Td (while brick states persist. Once lives become 0, show GAME OVER and the same two buttons. Do) Tj ET
+BT /F1 10 Tf 68 272 Td (not change the logic of any other module.) Tj ET
+BT /F2 12 Tf 54 250 Td (Assistant Reply) Tj ET
+BT /F1 10 Tf 68 234 Td (Added YOU WIN and GAME OVER states, two white end-screen buttons, 3 lives per round, life) Tj ET
+BT /F1 10 Tf 68 220 Td (display, restart behavior, and quit behavior. Ball and paddle reset on life loss while bricks) Tj ET
+BT /F1 10 Tf 68 206 Td (persist. Restart starts a fresh round. Verified compileall and direct checks for win, life) Tj ET
+BT /F1 10 Tf 68 192 Td (loss, game over, and restart button behavior.) Tj ET
+BT /F2 12 Tf 54 170 Td (User Prompt) Tj ET
+BT /F1 10 Tf 68 154 Td (Task 3: Implement different types of bricks. Red: 1 hit with red sparkle. Moss: reddish with) Tj ET
+BT /F1 10 Tf 68 140 Td (green texture, 3 hits, green sparkle on hit, green-red sparkle on break. Concrete: grey) Tj ET
+BT /F1 10 Tf 68 126 Td (concrete effect, 5 hits, cracks more after each hit, grey sparkle on hit, grey-brown sparkle) Tj ET
+BT /F1 10 Tf 68 112 Td (on break. Metal: shiny glowing metal, shake on hit, 6 hits, silver sparkle on hit, silver) Tj ET
+BT /F1 10 Tf 68 98 Td (spike particles on break. Obsidian: purple glow, unbreakable, max 3, purple sparkle on hit.) Tj ET
+BT /F1 10 Tf 68 84 Td (Randomize bricks each game with counts normal > moss > concrete > metal and max 3 obsidian. Do) Tj ET
+BT /F1 10 Tf 68 70 Td (not change any other game mechanism.) Tj ET
+BT /F1 9 Tf 522 28 Td (Page 1) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4124 >>
+stream
+BT /F2 12 Tf 54 744 Td (Assistant Reply) Tj ET
+BT /F1 10 Tf 68 728 Td (Implemented brick types in brick.py, random spawn assignment in game_engine.py, type-specific) Tj ET
+BT /F1 10 Tf 68 714 Td (hit/break behavior, particles, metal screen shake, and win counting that ignores unbreakable) Tj ET
+BT /F1 10 Tf 68 700 Td (obsidian. Renderer now draws red, moss, concrete, metal, and obsidian visuals including) Tj ET
+BT /F1 10 Tf 68 686 Td (cracks, glow, shine, and spike particles. Verified compileall, spawn counts, obsidian cap, hit) Tj ET
+BT /F1 10 Tf 68 672 Td (counts, obsidian unbreakability, win with obsidian remaining, and render smoke tests.) Tj ET
+BT /F2 12 Tf 54 650 Td (User Prompt) Tj ET
+BT /F1 10 Tf 68 634 Td (Make the moss block fully green with dark green dots, make it look like a mossy block. Make) Tj ET
+BT /F1 10 Tf 68 620 Td (the concrete block a bit of different shape if possible, slightly like an actual concrete) Tj ET
+BT /F1 10 Tf 68 606 Td (block. Keep all mechanisms and sparkle effects the same.) Tj ET
+BT /F2 12 Tf 54 584 Td (Assistant Reply) Tj ET
+BT /F1 10 Tf 68 568 Td (Updated only renderer.py visuals: moss is now fully green with dark green dots/speckles, and) Tj ET
+BT /F1 10 Tf 68 554 Td (concrete now has a slightly irregular concrete-block shape with bevel/shadow details.) Tj ET
+BT /F1 10 Tf 68 540 Td (Mechanics and sparkle effects are unchanged. Verified compileall and render smoke test.) Tj ET
+BT /F2 12 Tf 54 518 Td (User Prompt) Tj ET
+BT /F1 10 Tf 68 502 Td (Task 4: Remove the bricks left counter. Add a score mechanism: normal block +1, moss +3,) Tj ET
+BT /F1 10 Tf 68 488 Td (concrete +5, metal +6. Show this on screen. Improve UX of score and lives text. Show user) Tj ET
+BT /F1 10 Tf 68 474 Td (score when game is over or user wins. Add combo mechanism: after breaking 3 blocks in a row,) Tj ET
+BT /F1 10 Tf 68 460 Td (next 2 block breaks get +3 and show yellow 1X text particle. If combo continues to 5 blocks in) Tj ET
+BT /F1 10 Tf 68 446 Td (a row, next 3 breaks get +4 and show red 2X text. For higher streaks show violet 5X and add +5) Tj ET
+BT /F1 10 Tf 68 432 Td (per break. Combo degradation: if ball bounces 5 times off a brick and does not break anything,) Tj ET
+BT /F1 10 Tf 68 418 Td (reset combo. Change ball and paddle colors/effects for combo tiers. Shake screen on 1X to 2X) Tj ET
+BT /F1 10 Tf 68 404 Td (or 2X to 5X transitions. Reduce particles slowly on non-combo hits while in combo. Lose combo) Tj ET
+BT /F1 10 Tf 68 390 Td (on life loss. If ball is in 5X combo when it breaks the last block, make the ball explode and) Tj ET
+BT /F1 10 Tf 68 376 Td (break all blocks including non-breakable blocks, then show restart/YOU WIN window.) Tj ET
+BT /F2 12 Tf 54 354 Td (Assistant Reply) Tj ET
+BT /F1 10 Tf 68 338 Td (Implemented score display, final score on win/game-over, combo scoring tiers, combo text) Tj ET
+BT /F1 10 Tf 68 324 Td (particles, combo ball trails, paddle glow/color changes, transition screen shake, combo reset) Tj ET
+BT /F1 10 Tf 68 310 Td (on life loss, combo degradation, and the 5X final-block explosion that removes all remaining) Tj ET
+BT /F1 10 Tf 68 296 Td (blocks including obsidian before showing YOU WIN. Verified compileall, score/combo tests,) Tj ET
+BT /F1 10 Tf 68 282 Td (combo decay, life-loss reset, final explosion/win delay, and render smoke test.) Tj ET
+BT /F2 12 Tf 54 260 Td (User Prompt) Tj ET
+BT /F1 10 Tf 68 244 Td (Make changes: the combo degradation should not happen if the ball is bouncing off other) Tj ET
+BT /F1 10 Tf 68 230 Td (bricks. Only the bounce of the ball with the user bar should cause degradation.) Tj ET
+BT /F2 12 Tf 54 208 Td (Assistant Reply) Tj ET
+BT /F1 10 Tf 68 192 Td (Moved combo degradation so it only happens when the ball bounces off the paddle/user bar.) Tj ET
+BT /F1 10 Tf 68 178 Td (Removed degradation from non-breaking brick and obsidian hits. Verified compileall, that brick) Tj ET
+BT /F1 10 Tf 68 164 Td (hits no longer reduce combo, and that paddle bounce degradation still resets combo after 5) Tj ET
+BT /F1 10 Tf 68 150 Td (hits.) Tj ET
+BT /F1 9 Tf 522 28 Td (Page 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 514 >>
+stream
+BT /F2 12 Tf 54 744 Td (User Prompt) Tj ET
+BT /F1 10 Tf 68 728 Td (Export this conversation as a PDF, with all the prompts and the replies, properly. Add my) Tj ET
+BT /F1 10 Tf 68 714 Td (name: shishir, my SRN: PES1UG24CS438, section: 5H in the PDF.) Tj ET
+BT /F2 12 Tf 54 692 Td (Assistant Reply) Tj ET
+BT /F1 10 Tf 68 676 Td (Generated this PDF export with the requested student details and the conversation prompts and) Tj ET
+BT /F1 10 Tf 68 662 Td (replies in order.) Tj ET
+BT /F1 9 Tf 522 28 Td (Page 3) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000134 00000 n 
+0000000204 00000 n 
+0000000279 00000 n 
+0000004117 00000 n 
+0000004253 00000 n 
+0000008429 00000 n 
+0000008565 00000 n 
+0000009130 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+9267
+%%EOF
